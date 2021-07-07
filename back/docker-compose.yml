@@ -1,0 +1,16 @@
+version: '3.1'
+services:
+    db:
+        image: mysql
+        cap_add:
+        - SYS_NICE
+        container_name: mysql-youx
+        environment:
+            MYSQL_ROOT_PASSWORD: root
+        ports:
+        - "3306:3306"
+        volumes:
+        - clinica_data:/var/lib/mysql
+
+volumes:
+    clinica_data:

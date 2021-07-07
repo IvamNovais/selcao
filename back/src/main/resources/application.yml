@@ -1,1 +1,12 @@
+server:
+    error:
+        include-Stacktrace: on_param
 
+spring:
+    dataSource:
+        url: jdbc:mysql://localhost:3306/clinica?createDatabaseIfNotExist=true
+        username: root
+        password: root
+    jpa:
+        hibernate:
+            ddl-autto: update
