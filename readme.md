@@ -4,6 +4,7 @@
 * usando map struct para mapeamento
 * usando o lombok
 * banco de dados mysql em container (acompanha script)
+* medico cadastrado username: bao password: 123
 
 
 ---
