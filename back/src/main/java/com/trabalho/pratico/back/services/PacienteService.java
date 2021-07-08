@@ -25,7 +25,7 @@ public class PacienteService {
     }
     public Paciente findPacienteOrThrowsBadRequest(long id){
         return repository.findById(id).
-        orElseThrow(()-> new ResponseStatusException(HttpStatus.BAD_REQUEST,""));
+        orElseThrow(()-> new ResponseStatusException(HttpStatus.BAD_REQUEST,"paciente nao encontado"));
     }
     public Paciente savePaciente(PacientePostRequestBody pacientePostRequestBody){
         Paciente paciente = PacienteMapper.INSTANCE.toPaciente(pacientePostRequestBody);
