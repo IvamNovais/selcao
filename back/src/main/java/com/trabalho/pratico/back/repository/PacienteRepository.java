@@ -5,5 +5,5 @@ import com.trabalho.pratico.back.models.Paciente;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface PacienteRepository extends JpaRepository<Paciente ,Long> {
-    
+    Boolean existsByCpf(String cpf);
 }
