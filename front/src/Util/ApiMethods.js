@@ -1,14 +1,13 @@
 import api from "./Api.js"
 
-async function getToken(){
+async function getToken(credenciais){
         const token = await api.post("/oauth/token",{
         auth: {
             Username: 'Bam',
             Password: '123'
          },
          grant_type: "password",
-         Username: 'Doug',
-        Password: '123'
+         credenciais
 
     })
     console.log(token)
